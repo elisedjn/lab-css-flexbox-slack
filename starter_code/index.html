@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- link the font awesome CDN -->
@@ -19,7 +22,8 @@
   <body>
     <nav>
       <img src="./images/slack-logo.png" alt="slack_logo" />
-      <ul>
+      <i class="fas fa-bars hamburger"></i>
+      <ul class="menu">
         <li>Why Slack?</li>
         <li>Pricing</li>
         <li>About Us</li>
@@ -35,35 +39,37 @@
         an A/B test, plan your next office opening, and more, Slack has you
         covered.
       </p>
-      <button type="button" name="button">GET STARTED</button>
-      <p>Already using Slack? <a href="#">Sign in</a></p>
+      <button class="get_started" type="button" name="button">GET STARTED</button>
+      <p class="already_using">Already using Slack? <a href="#">Sign in</a></p>
     </header>
     <main>
-      <div>
+      <div class="good_company">
         <h2>You're in good company</h2>
         <p>
           Millions of people around the world have already made Slack the place
           where their work happens.
         </p>
         <button>DISCOVER WHY</button>
-        <img src="./images/airbnb-logo.png" alt="" />
-        <img src="./images/capital-one-logo.png" alt="" />
-        <img src="./images/harvard-logo.png" alt="" />
-        <img src="./images/los-angeles-times-logo.png" alt="" />
-        <img src="./images/oracle-logo.png" alt="" />
-        <img src="./images/ticketmaster-logo.png" alt="" />
+        <div class="partners">
+          <div><img src="./images/airbnb-logo.png" alt="Airbnb" /></div>
+          <div><img src="./images/capital-one-logo.png" alt="Capital One" /></div>
+          <div><img src="./images/harvard-logo.png" alt="Harvard" /></div>
+          <div><img src="./images/los-angeles-times-logo.png" alt="Los Angeles Times" /></div>
+          <div class="small_image"><img src="./images/oracle-logo.png" alt="Oracle" /></div>
+          <div class="last_partner small_image"><img src="./images/ticketmaster-logo.png" alt="Ticket Master" /></div>
+        </div>
       </div>
-      <div>
-        <p>Try it for free</p>
-        <p>Already using Slack? <a href="">Sign in</a></p>
-        <button type="button" name="button">GET STARTED</button>
+      <div class="try_it_for_free">
+        <h3>Try it for free</h3>
+        <p class="already_using">Already using Slack? <a href="">Sign in</a></p>
+        <button class="get_started" type="button" name="button">GET STARTED</button>
       </div>
     </main>
     <footer>
-      <div>
-        <img src="./images/iso-slack.png" alt="" />
+      <img src="./images/iso-slack.png" alt="" />
+      <div class="footer_white">
         <ul>
-          <li>COMPANY</li>
+          <li class="bold">COMPANY</li>
           <li>About Us</li>
           <li>Careers</li>
           <li>Blog</li>
@@ -71,7 +77,7 @@
           <li>Brand Guidelines</li>
         </ul>
         <ul>
-          <li>PRODUCT</li>
+          <li class="bold">PRODUCT</li>
           <li>Why Slack?</li>
           <li>Enterprise</li>
           <li>Customer Stories</li>
@@ -79,7 +85,7 @@
           <li>Security</li>
         </ul>
         <ul>
-          <li>RESOURCES</li>
+          <li class="bold">RESOURCES</li>
           <li>Download</li>
           <li>Help Center</li>
           <li>Guides</li>
@@ -88,26 +94,30 @@
           <li>API</li>
         </ul>
         <ul>
-          <li>EXTRAS</li>
+          <li class="bold">EXTRAS</li>
           <li>Podcast</li>
           <li>Slack Shop</li>
           <li>Slack at Work</li>
           <li>Slack Fund</li>
         </ul>
       </div>
-      <div>
+      <div class="footer_grey">
         <ul>
           <li>Status</li>
           <li>Privacy & Terms</li>
           <li>Contact Us</li>
         </ul>
         <div>
-          <img src="./images/us-flag.png" alt="" />
-          <span>English (US)</span>
-          <i class="fas fa-chevron-down"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-youtube"></i>
+          <div class="lang">
+            <img src="./images/us-flag.png" alt="" />
+            <span>English (US)</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="social">
+            <i class="fab fa-twitter fa-lg"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-youtube fa-lg"></i>
+          </div>
         </div>
       </div>
     </footer>
